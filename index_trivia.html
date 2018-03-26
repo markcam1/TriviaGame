@@ -19,33 +19,37 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div id="display">30:00</div>
-        
+            
             <!-- Div containing our stopwatch controls -->
             <div id="buttons">
-            <button id="start">Start</button>
-            <button id="stop">Stop</button>
-            <button id="reset">Reset</button>
-            <button id="lap">Lap</button>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+                <button id="lap">Lap</button>
             </div>
             <div id="laps"></div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center">
-            QUESTION SPACE
+    <div class="row" id="quizface">
+        <div class="col-md-6 col-md-offset-3 text-center qbox">
+            <div id="display">30</div>
+            <br>
+            <span id="qspace"></span>
+            <br>
+        </div>
+        <div class="col-md-6 col-md-offset-3 text-center" id="choicebox">
+            <button type="button" class="btn btn-default btn-lg btn-block choicebtn" value="1"><span id="b1"></span></button>
+            <button type="button" class="btn btn-default btn-lg btn-block choicebtn" value="2"><span id="b2"></span></button>
+            <button type="button" class="btn btn-default btn-lg btn-block choicebtn" value="3"><span id="b3"></span></button>
+            <button type="button" class="btn btn-default btn-lg btn-block choicebtn" value="4"><span id="b4"></span></button>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center choicebox">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
-            <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+        <div class="col-md-12 text-center bigshow">
+            <button type="button" class="btn btn-success btn-lg btn-block" id=firststart><h2>START</h2></button>
         </div>
+        <div id="image-holder"></div>
     </div>
-
-
 </div>
 
 
