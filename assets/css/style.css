@@ -1,18 +1,22 @@
-body { 
-}
+/* body { 
+} */
 
 #quizface {
   display: none;
 }
 
+#mainarea {
+  display: none;
+}
 
-/* #display {
+
+#clockdisplay {
   font-family: monospace;
-  font-size: 120px;
+  font-size: 36pt;
   color: green;
   text-align: center;
   background: black;
-} */
+}
 
 /* #buttons { 
   text-align: center;
