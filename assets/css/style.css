@@ -1,22 +1,64 @@
-/* body { 
-} */
-
-#quizface {
-  display: none;
+body { 
+  background-image: url(../media/space.jpg)
 }
 
-#mainarea {
-  display: none;
+#mainhead {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42pt;
+  color: #CACACA;
+  text-shadow: 2px 2px 4px lightblue;
+}
+.main h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #CACACA;
+  font-style: italic;
 }
 
+#quizface, #mainarea, #reviewboard, #showRightWrong  {
+  display: none;
+}
 
 #clockdisplay {
   font-family: monospace;
-  font-size: 36pt;
+  font-size: 34pt;
   color: green;
   text-align: center;
   background: black;
 }
+
+.clockbox {
+  background: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+}
+
+.qbox {
+  background-color: black;
+  color: lightblue;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+}
+
+#showRightWrong {
+  font-family: 'Abril Fatface', cursive;
+  color: gold;
+  font-size: 30pt;
+}
+
+#qspace {
+  font-size: 24pt;
+  font-style: italic;
+}
+#quizface button {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+  font-weight: bold; 
+}
+
+
+
 
 /* #buttons { 
   text-align: center;
