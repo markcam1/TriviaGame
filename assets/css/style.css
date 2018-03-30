@@ -1,0 +1,89 @@
+body { 
+  background-image: url(../media/space.jpg)
+}
+
+#mainhead {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42pt;
+  color: #CACACA;
+  text-shadow: 2px 2px 4px lightblue;
+}
+.main h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #CACACA;
+  font-style: italic;
+}
+
+#quizface, #scoreboard, #mainarea, #reviewboard, #showRightWrong  {
+  display: none;
+}
+
+#clockdisplay {
+  font-family: monospace;
+  font-size: 34pt;
+  color: green;
+  text-align: center;
+  background: black;
+}
+
+.clockbox {
+  background: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.qbox {
+  background-color: black;
+  color: lightblue;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+}
+
+#showRightWrong {
+  font-family: 'Abril Fatface', cursive;
+  color: gold;
+  font-size: 30pt;
+}
+
+#qspace {
+  font-size: 24pt;
+  font-style: italic;
+}
+#quizface button {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+  font-weight: bold; 
+}
+
+#scoreboard {
+  background-color: lightgreen;
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+
+}
+
+
+/* #buttons { 
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+}
+
+#laps {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  overflow: auto;
+  text-align: center;
+  background: white;
+} */
