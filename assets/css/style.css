@@ -14,7 +14,7 @@ body {
   font-style: italic;
 }
 
-#quizface, #mainarea, #reviewboard, #showRightWrong  {
+#quizface, #scoreboard, #mainarea, #reviewboard, #showRightWrong  {
   display: none;
 }
 
@@ -59,7 +59,15 @@ body {
   font-weight: bold; 
 }
 
+#scoreboard {
+  background-color: lightgreen;
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
 
+}
 
 
 /* #buttons { 

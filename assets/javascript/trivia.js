@@ -79,7 +79,6 @@ function quizStarter (){
   function cycleGame () {
     nextQuestion = quizObject.pop();
     gameDisplay(nextQuestion,1)
-    console.log(typeof(nextQuestion));
  
     function gameDisplay (obj,item){
       for (key in obj){
@@ -113,16 +112,13 @@ function quizStarter (){
   
   function gameJudger (){
     var userChoice = $(this).text();
-    console.log("user: " + userChoice + " correct: " + finalAnswer) 
     stopwatch.stop();
 
     if ( userChoice == finalAnswer ){
       winMaker();
-      console.log("good");
     }
     else{ 
       lossMaker();
-      console.log("loss");
     }
 
     function winMaker(){
@@ -163,7 +159,7 @@ function updateEngine (userAudit){
     $("#qspace").text("The correct answer is " + finalAnswer);
     $("#quizface").hide();
     clearInterval(timeFail);
-    $("#reviewboard").show( "fast" );
+    $("#reviewboard").show();
     var moveOnTimer = setInterval(nextGame, 4000);
     
     function nextGame (){
@@ -192,23 +188,30 @@ function gifPlayer(searchTerm) {
       $('#reviewboard').prepend(img)
     })
   });
-  
 }
 
-
 function gameMaster (){
-  
-  console.log("gameMaster: " + quizObject.length);
-  
-  if (gameCounter === 4){
-    console.log("quiz em")
-    stopwatch.reset();
-    quizStarter();
-  }
-  else{
-    cycleGame();
     
+  if (gameCounter == 10){
+    $("#quizface").hide();
+    $("#qspace").hide();
+    $("#scoreboard").show();
+    $("#winscore").text(wins);
+    $("#lossscore").text(loss);
+    stopwatch.stop();
+    var gameRestarter = setInterval(restartGame, 4000);
   }
+  if (gameCounter < 10){
+    cycleGame();
+  }
+  function restartGame (){
+    clearInterval(gameRestarter);
+    quizStarter();
+    $("#qspace").show();
+    $("#scoreboard").hide();
+    $("#quizface").show();
+  }
+
 }
 
 
