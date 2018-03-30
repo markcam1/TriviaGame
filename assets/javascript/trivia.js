@@ -1,7 +1,5 @@
 window.onload = function() {
 
-  $("#stop").on("click", stopwatch.stop);
-  $("#reset").on("click", stopwatch.reset);
   $("#start, #firststart").on("click", quizStarter);
   $("#quizface").on("click", ".choicebtn", gameJudger);
 };
